@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="topo">
+    <h1>BLOG RESUMIDO SOBRE HTML</h1>
+  </header>
+  <hr>
+  <h3>Índices</h3>
+  <nav>
+   <ul>
+    <li><a href="#html">Introdução</a></li>
+    <li><a href="#principais">Tags principais</a></li>
+    <li><a href="#textuais">Tags textuais</a></li>
+    <li><a href="#atributos">Atributos</a></li>
+    <li><a href="#tabelas">Tabelas e fieldset</a></li>
+    <li><a href="#input">Tags de input</a></li>
+    <li><a href="#midias">Multimídia</a></li>
+    <li><a href="#semanticas">Tags semânticas</a></li>
+    <li><a href="#seo">SEO</a></li>
+   </ul>
+  </nav>
+  
+  <main>
+    <section id="html">
+    <p><a href="#topo">Voltar ao topo</a></p>
+      <h2>Introdução ao HTML</h2>
+      <p>O HTML é a linguagem usada para estruturar páginas da web. Ele organiza o conteúdo através de tags, que são como blocos que vão se conectando e gerando a página como um todo, e utilizado também atributos.</p>
+    </section>
+
+    <section id="principais">
+     <p><a href="#topo">Voltar ao topo</a></p>
+      <h2>Tags principais</h2>
+      <p>São as tags que estruturam a página. Exemplo: html (raiz do documento), head (informações sobre a página), title (título exibido no navegador), body (conteúdo visível).</p>
+    </section>
+
+    <section id="textuais">
+      <p><a href="#topo">Voltar ao topo</a></p>
+      <h2>Tags textuais</h2>
+      <p>Servem para formatar textos. Exemplo: p (parágrafo), strong (destaque), em (ênfase), br (quebra de linha), hr (linha divisória).</p>
+    </section>
+
+    <section id="atributos">
+     <p><a href="#topo">Voltar ao topo</a></p>
+      <h2>Atributos</h2>
+      <p>São informações extras colocadas nas tags para definir detalhes. Exemplo: img usa src para o caminho da imagem e alt para a descrição.
+      outros atributos:id, name, class, action, style e entre outros</p>
+    </section>
+
+    <section id="tabelas">
+      <p><a href="#topo">Voltar ao topo</a></p>
+      <h2>Tabelas</h2>
+      <p>A tabela organiza dados em linhas e colunas com as tags table, thead, tbody, tfoot, tr, td, th.
+        O fieldset é usado em formulários para agrupar campos semelhantes.</p>
+    </section>
+
+    <section id="input">
+      <p><a href="#topo">Voltar ao topo</a></p>
+      <h2>Tag de input e variações</h2>
+      <p>Usadas em formulários para capturar dados do usuário. Exemplos: text (texto), password (senha), email (e-mail), data.
+        variações: checkbox (caixa de seleção), radio (opções).</p>
+    </section>
+    
+    <section id="formulario">
+      <p><a href="#topo">Voltar ao topo</a></p>
+      <h1>vamos abordar sobre formulários e fieldset</h1>
+      
+      <p>O formulário é um conjunto de informaçãoes que o usuário preencherar como dados pessoais, endereço, interesses etc.
+      </p>
+      <p>Criado principalmente pelas tag form, fieldset e tags de campo como input, checkbox e outros.</p>
+      <p>o <i>Fieldset</i> tem como objetivo ajudar a separar os conteúdos por partes, como por exemplo:dados pessoais, cargo e tecnologias</p>
+      
+      <h3>Exemplo de formulário com fieldset</h3>
+
+  <form action="#" method="post">
+      
+  <fieldset>
+  <legend>Informações de acesso</legend>
+  <!-- campo do nome -->
+      
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" placeholder="Nome">
+    <br>
+
+  <!-- Campo de e-mail -->
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+    <br>
+
+  <!-- Campo de senha -->
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+  </fieldset>
+  
+  <fieldset>
+  <legend>dados pessoais e interresses</legend>
+  <!-- Radio -->
+  <p>
+    Gênero:
+    <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+    <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+    <label><input type="radio" name="genero" value="outro"> Outro</label>
+  </p>
+
+  <!--Checkboxes-->
+  <p>
+    Interesses:
+    <label><input type="checkbox" name="interesses" value="html"> HTML</label>
+    <label><input type="checkbox" name="interesses" value="css"> CSS</label>
+    <label><input type="checkbox" name="interesses" value="javascript"> JavaScript</label>
+  </p>
+
+  <!-- Select / Options -->
+    País:
+    <select name="pais">
+      <option value="">Selecione</option>
+      <option value="br">Brasil</option>
+      <option value="pt">Portugal</option>
+      <option value="us">Estados Unidos</option>
+    </select>
+    <br>
+  </fieldset>
+
+  <!-- Botões -->
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+
+  </form>
+      
+    </section>
+
+    <section id="midias">
+      <p><a href="#topo" >Voltar ao topo</a></p>
+      <h2>Multimídia</h2>
+      <p>Permitem inserir imagens, sons e vídeos. Exemplo: img (imagem) , audio (som), video (vídeo) e nós vídeos podemos colocar a tag track que vai ajudar na tradução e para que pessoas surdas consigam entender sobre o que é o vídeo.</p>
+    </section>
+
+    <section id="semanticas">
+      <p><a href="#topo" >Voltar ao topo</a></p>
+      <h2>Tags semânticas</h2>
+      <p>Essas tags dão significado ao conteúdo, ajudando a organizar a página. Exemplo: header (cabeçalho), nav (menu de navegação), main (conteúdo principal), article (artigo), footer (rodapé).</p>
+    </section>
+
+    <section id="seo">
+      <p><a href="#topo" >Voltar ao topo</a></p>
+      <h2>SEO (básico)</h2>
+      <p>São práticas que ajudam a página a aparecer melhor nos buscadores. Exemplo: usar title descritivo, meta description, imagens com alt e títulos organizados (h1, h2...).</p>
+      <p><a href="#topo" >Voltar ao topo</a></p>
+    </section>
+    
+    <section id="iframe">
+    <h1>iframe</h1>
+
+    <p>A tag <strong>iframe</strong> é usada para incorporar outra página HTML dentro da página atual.</p>
+    <p>Também é possível usar <strong>iframe</strong> para incorporar vídeos do YouTube em uma página.</p>
+
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/Yw74sDWPH7U">
+    </iframe>
+
+    <p>No exemplo acima, está sendo carregado uma pagina do YouTube dentro do nosso site, a visualização do vídeo sera contada para o YouTube. Muito comum usar google maps por exemplo para demonstrar a localização do estabelecimento.</p>
+    </section>
+  </main>
+
+  <footer>
+    <hr>
+    <i> &copy; 18 de agosto de 2025 • Blog resumido sobre html ~ por Anderson.C</i>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
